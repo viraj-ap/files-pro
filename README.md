@@ -9,6 +9,34 @@
 
 Files Pro is a powerful yet simple web application that allows you to convert and compress various media files with ease.
 
+## How to setup locally
+### 1. Using Docker (the best way).
+```
+git clone https://github.com/viraj-ap/files-pro
+
+docker-compose up --build
+```
+then go to http://localhost:5173/
+
+### 2. Setting up locally.
+1. Make sure you have downloaded FFmpeg locally
+```
+git clone https://github.com/viraj-ap/files-pro
+
+cd backend 
+pip install -r requirements.txt
+python app.py
+
+cd .. 
+
+cd frontend
+npm install
+npm run dev
+
+```
+
+make sure backend is running at http://localhost:5000/ then go to http://localhost:5173/
+
 ## ✨ Features
 
 - **File Conversion** - Convert between various formats including:
@@ -36,9 +64,4 @@ Files Pro is a powerful yet simple web application that allows you to convert an
   - Python Flask
   - FFmpeg for media processing
 
-## 📋 Prerequisites
-
-- Node.js (for frontend)
-- Python (for backend)
-- FFmpeg installed on your system
 

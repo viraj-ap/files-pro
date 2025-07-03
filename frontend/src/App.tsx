@@ -194,7 +194,6 @@ function App(): JSX.Element {
   ];
 
   const operationOptions: OperationOption[] = [
-    { value: "convert", label: "Convert Format", description: "Change file format" },
     { value: "compress_video", label: "Compress Video", description: "Reduce video file size" },
     { value: "compress_image", label: "Compress Image", description: "Reduce image file size" },
   ];
